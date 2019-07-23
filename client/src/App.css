@@ -1,0 +1,234 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* COMPONENTS CSS */ 
+
+button:focus{
+	outline:0;
+	outline: none;
+}
+button:hover{
+	cursor: pointer;
+}
+input {
+	outline:none;
+}
+
+.loginWinsow {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authenticationOk {
+  display: none;
+}
+
+.title {
+	width: 100%;
+	height: 70px;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.30);
+}
+.LogoutButton {
+	border: 3px solid #08AEEA;
+	background: transparent;
+	font-family: 'DM Sans', sans-serif;
+	border-radius: 10px;
+	font-size: 0.8em;
+	
+	
+}
+
+
+body {
+	background-color: #08AEEA;
+	background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#root {
+	width: 550px;
+	height: 600px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	
+}
+.loginForm {
+	height: 100%;
+	padding: 70px 0;
+}
+.loginFormHeader {
+	display: block;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+	margin: 50px auto;
+	text-align: center;
+}
+.loginButtons {
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.loginButtons button {
+	display: block;
+	margin: 15px auto;
+	width: 200px;
+	height: 50px;
+	border: 1px solid #08AEEA;
+	background-color: rgba(8,174,234, .3);
+	transition: ease-out .3s;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1em;
+	color: black;
+}
+.facebookButton:hover {
+	background-color: #3b5998;
+	color: #fff;
+	border: transparent;
+}
+.VKButton:hover {
+	background-color: #597da3;
+	color: #fff;
+	border: transparent;
+}
+.messageList {
+	padding: 15px;
+	font-family: 'Open Sans', sans-serif;
+	height: 480px;
+	overflow-y: auto;
+}
+.messageList p {
+	margin: 3px 0;
+	font-size: 0.7em;
+}
+.thisUserMessageContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.thisUserMessage {
+	text-align: right;
+}
+.thisUserMessage div{
+	background: rgb(93, 241, 93);
+  }
+
+  .messageText {
+	max-width: 500px;
+	border-radius: 10px;
+	padding: 7px 10px;
+	display: inline-block;
+	word-wrap: break-word;
+  }
+  .otherUsersMessages div{
+	background: rgb(34, 143, 252);
+  }
+   /* SCROLL BAR */ 
+  
+	
+	::-webkit-scrollbar-track {
+	background-color: transparent
+	}
+	
+	::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color:#bbbbbb;
+	}
+	
+	::-webkit-scrollbar-thumb:hover{
+	background-color:#808080;
+	}
+	
+	
+	
+	::-webkit-scrollbar{
+	width: 4px;
+	}
+
+	/* SEND MESSAGE FORM */
+
+	.sendMessageForm {
+		width: 100%;
+		height: 50px;
+		padding: 0px 5px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		box-shadow: 0px -5px 13px 0px rgba(0,0,0,0.30);
+	}
+
+	.sendMessageForm textarea {
+		width: 90%;
+		height: 2.5em;
+		outline: none;
+		resize: none;
+		border: none;
+		font-size: 1em;
+		font-family: 'Open Sans', sans-serif;
+		padding: 10px;
+		overflow: hidden;
+	  }
+	 
+	.sendButton{
+		width: 40px;
+		height: 40px;
+	}
